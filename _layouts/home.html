@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+  
+  {{ content }}
+
+  
+
+  {% for post in site.posts %}
+  {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+  
+  <div class="panel panel-default">
+      <div class="panel-heading">
+        <div class="panel-title pull-left">
+          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        </div>
+        <div class="panel-title pull-right">
+           <span class="post-meta">{{ post.date | date: date_format }}</span> 
+        </div>
+        <div class="clearfix"></div>
+      </div>
+      <div class="panel-body">
+        {% if post.content contains "<-- more -->" %}
+          {{ post.content | spilt: "<-- more -->" | first }}
+        {% else %}
+          {{ post.content | strip_html | truncatewords:100 }}
+        {% endif %}
+        <div class="read-more">
+            <br><a class="btn btn-default" href="{{ BASE_PATH }}{{ post.url }}">READ MORE</a>
+        </div><br>  
+          {% for cate in post.categories %}
+          <span class="label label-default">{{ cate }}</span>&nbsp;
+          {% endfor %}
+      </div>
+      <div class="panel-footer">
+          <span class="post-meta">{{ post.date | date: date_format }}</span>
+      </div>
+  </div><hr>
+  {% endfor %}
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+</div>
