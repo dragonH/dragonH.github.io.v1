@@ -8,45 +8,65 @@
     {% include header.html %}
     
       <div class="banner">
-          <img src="/img/banner.png" width="100%" height="300"></img>
+          <img src="/img/banner.png" width="100%" height="400"></img>
       </div>
     <div class="container">
     
     <div class="row" >
       <div class="col-sm-8">
         <section>
-          <div class="wrapper">
+          <div class="wrapper" style="min-height:600px;">
             {{ content }}
           </div>
           
         </section>
       </div>
       
-      <div class="col-sm-3 col-sm-offset-1"><br>
-        <aside>
-          <div class="well">
-          <ul>
-            <li>
-              <a href="#">種類1</a>
-              <ul>
-                <li>1</li>
-              </ul>  
-            </li>  
+      <div class="col-sm-3 col-sm-offset-1">
+        <h3><strong>Categories</strong></h3>
+        <div class="well">
+        
+       
+        <div class="panel-group" id="panelgroup1">
+            {% for post in site.posts %}
+            {% for cate in post.categories%}
+            <div class="panel panel-info">
+              <div class="panel-heading" role="tab" id="paneltitle1">
+                <h4 class="panel-title">
+                  <a href="#{{ cate }}" data-toggle="collapse" data-parent="#panelgroup1">{{ cate }}</a>
+                </h4>
+              </div>
+              
+              <div class="panel-collapse collapse" role="tabpanel" id="{{ cate }}">
+                
+                  <ul class="list-group">
+                      {% for tag in post.tags %}
+                      <a href="#" class="list-group-item">{{ tag }}</a>
+                      {% endfor %}
+                  </ul>
+              </div>
+            </div>  
           
-          <li>2</li>
-          <li>3</li>
-          <li>4</li>
-         </ul>
-        </div>
-        </aside>
+
+            
+           
+        
+      
+        {% endfor %}
+        {% endfor %} 
+      </div>
+      </div>    
+            
+          
+        
         
       </div>
      
     </div>
-
-    </div>
+ 
+   
     {% include footer.html %}
-
   </body>
+  
 
 </html>
