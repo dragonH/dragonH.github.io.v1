@@ -10,13 +10,13 @@ layout: default
 
   
 
-  {% for post in site.posts limit:10%}
+  {% for post in site.posts  limit:10 %}
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
   
   <div class="panel panel-default">
       <div class="panel-heading">
         <div class="panel-title pull-left">
-          <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+          <a class="post-link" href="{{ post.url | relative_url }}">【{{ post.categories[1] }}】 {{ post.title | escape }}</a>
         </div>
         <div class="panel-title pull-right">
            <span class="post-meta">{{ post.date | date: date_format }}</span> 
@@ -35,13 +35,19 @@ layout: default
           {% for tag in post.tags %}
           <span class="label label-default">{{ tag }}</span>&nbsp;
           {% endfor %}
+          
       </div>
       <div class="panel-footer">
           <span class="post-meta">{{ post.date | date: date_format }}</span>
       </div>
   </div><hr>
   {% endfor %}
+  {% for cate in site.mc1.categories %}
+    <span>cate</span>
+  {% endfor %}
   
+  
+
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
 </div>

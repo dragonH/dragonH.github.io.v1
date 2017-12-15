@@ -1,0 +1,34 @@
+<h3><strong>Categories</strong></h3>
+<div class="well">
+    <div class="panel-group" id="panelgroup1">
+        
+        {% for cate in site.data.mycate.cate %}
+        <div class="panel panel-info">
+            <div class="panel-heading" role="tab" id="paneltitle1">
+                <h4 class="panel-title">
+                <a href="#{{ cate.title }}" data-toggle="collapse" data-parent="#panelgroup1">{{ cate.title }}
+                    <span class="badge pull-right">{{ site.categories.[cate.title] | size }}</span>
+                </a>
+                </h4>
+            </div>
+            
+            <div class="panel-collapse collapse" role="tabpanel" id="{{ cate.title }}">
+                <ul class="list-group">
+                    {% for subcate in cate.subcate %}
+                    
+                    
+                    <a href="{{ subcate.url }}" class="list-group-item">{{ subcate.title }}
+                        <span class="badge">{{ site.categories.[subcate.title] | size }}</span>
+                    </a>
+                    
+                    
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>  
+        {% endfor %}
+        
+   
+    </div>
+</div>    
+    

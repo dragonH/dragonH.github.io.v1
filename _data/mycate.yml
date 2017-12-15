@@ -1,0 +1,21 @@
+cate:
+  - title: ProgramingLanguage
+    subcate:
+      - title: Java
+        url: /mcategories/ProgramingLanguage/Java
+      - title: Python
+        url: /mcategories/ProgramingLanguage/Python
+      - title: JavaScript
+        url: /mcategories/ProgramingLanguage/JavaScript  
+      - title: C#
+        url: /mcategories/ProgramingLanguage/C#  
+  - title: Test
+    subcate:
+      - title: GEPT
+        url: /#
+      - title: TOEIC
+        url: /TOEIC  
+  - title: Blog
+    subcate:
+      - title: blog
+        url: /mcategories/ProgramingLanguage/Blog 
