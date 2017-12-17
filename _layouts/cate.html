@@ -2,7 +2,7 @@
 layout: default
 ---
 <div class="categories">
-    <h3><strong>{{ page.title }}</strong></h3>
+    <h3><strong>Categories: {{ page.title }}</strong></h3>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% for post in site.posts %}
         {% if post.categories contains page.title %}

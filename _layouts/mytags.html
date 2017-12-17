@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="tags">
-    <h3><strong>{{ page.title }}</strong></h3>
+    <h3><strong>Tags: {{ page.title }}</strong></h3>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% for post in site.posts %}
         {% if post.tags contains page.title %}
