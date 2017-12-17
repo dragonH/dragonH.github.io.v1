@@ -1,5 +1,5 @@
 .well{
- background-color: #ffffff;   
+ background-color: #f1ecec;   
 }
 
 .xbreadcrumb{
@@ -8,4 +8,12 @@
 
 body{
     font-family: 'Roboto', sans-serif;
+}
+
+.outside{
+    background-color: #f5f3f3;   
+}
+.panel > .panel_dra {
+    background-image: none;
+    background-color: white;
 }

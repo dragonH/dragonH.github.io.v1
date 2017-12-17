@@ -39,6 +39,10 @@ collections:
    mcategories:
       output: true
       permalink: :collection/:path
+   mtags:
+      output: true
+      permalink: :collection/:path
+
 
 
     

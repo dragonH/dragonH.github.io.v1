@@ -10,7 +10,8 @@
       <div class="banner">
           <img src="/img/banner.png" width=100% height=300></img>
       </div>
-    <div class="container">
+    <div class="outside">
+    <div class="container" id="m_body">
     
     <div class="row" >
       <div class="col-sm-8">
@@ -24,12 +25,13 @@
       
       <div class="col-sm-3 col-sm-offset-1">
         {% include categories_sidebar.html %}
+        <h3><strong>Tags</strong></h3>
         <div class="well">
             <div id="tag_cloud">
                 
                   {% for tag in site.tags %}
                     
-                  <a href="/tag_indices/{{ tag | first }}/">
+                  <a href="/mtags/{{ tag | first }}/">
                     {{ tag | first  }}
                   </a>
                   {% endfor %}
@@ -42,6 +44,7 @@
  
    
     {% include footer.html %}
+  </div>
   </body>
   
 

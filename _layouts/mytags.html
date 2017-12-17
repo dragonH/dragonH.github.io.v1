@@ -1,11 +1,12 @@
 ---
 layout: default
 ---
-<div class="categories">
+
+<div class="tags">
     <h3><strong>{{ page.title }}</strong></h3>
     {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
     {% for post in site.posts %}
-        {% if post.categories contains page.title %}
+        {% if post.tags contains page.title %}
         <h4><ol class="breadcrumb">
             <li><a href="{{ post.url | relative_url }}">{{ post.date | date: date_format }}</a></li>
             <li><a href="/mcategories/{{ post.categories[0] }}">{{ post.categories[0] }}</a></li>

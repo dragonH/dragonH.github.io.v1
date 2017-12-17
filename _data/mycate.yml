@@ -11,9 +11,9 @@ cate:
         url: /mcategories/ProgramingLanguage/C#  
   - title: Test
     subcate:
-      - title: GEPT
+      - title: CPE
         url: /#
-      - title: TOEIC
+      - title: TQC
         url: /# 
   - title: Blog
     subcate:
@@ -25,3 +25,8 @@ cate:
         url: /mcategories/Web/Jekyll
       - title: Html
         url: /mcategories/Web/Html
+  - title: News
+    subcate:
+      - title: News
+        url: /mcategories/News/News
+      
