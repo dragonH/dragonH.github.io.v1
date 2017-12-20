@@ -21,21 +21,22 @@
           </div>
           
         </section>
+       
+        
       </div>
       
       <div class="col-sm-3 col-sm-offset-1">
         {% include categories_sidebar.html %}
-        <h3><strong>Tags</strong></h3>
-        <div class="well">
+        <span class="glyphicon glyphicon-tags">&nbsp;</span><h3 style="display:inline;"><strong>Tags</strong></h3>
+        <br><br><div class="well">
             <div id="tag_cloud">
-                
                   {% for tag in site.tags %}
                     
                   <a href="/mtags/{{ tag | first }}/">
-                    {{ tag | first  }}
+                    #{{ tag | first  }}
                   </a>
                   {% endfor %}
-                
+              
               </div>
         </div>
       </div>
