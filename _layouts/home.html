@@ -10,7 +10,7 @@ layout: default
 
   
 
-  {% for post in site.posts  limit:10 %}
+  {% for post in site.posts  limit:2 %}
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
   <h4><ol class="breadcrumb">
     <li><a href="{{ post.url | relative_url }}">{{ post.date | date: date_format }}</a></li>
@@ -52,8 +52,11 @@ layout: default
     <span>cate</span>
   {% endfor %}
   
+
+ 
+  
   
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
 
 </div>

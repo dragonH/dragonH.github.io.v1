@@ -31,6 +31,11 @@ markdown: kramdown
 theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 2
+paginate_path: "/page:num"
+
 
 collections:
    mc1:
