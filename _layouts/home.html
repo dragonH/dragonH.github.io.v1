@@ -10,7 +10,7 @@ layout: default
 
   
 
-  {% for post in site.posts  limit:2 %}
+  {% for post in paginator.posts %}
   {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
   <h4><ol class="breadcrumb">
     <li><a href="{{ post.url | relative_url }}">{{ post.date | date: date_format }}</a></li>
@@ -56,7 +56,6 @@ layout: default
  
   
   
-
 
 
 </div>
