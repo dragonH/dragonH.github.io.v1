@@ -1,3 +1,4 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
 .well{
  background-color: #f1ecec;   
 }
@@ -6,8 +7,8 @@
     background-color: #ffffff
 }
 
-body{
-    font-family: 'Roboto', sans-serif;
+body,p{
+    font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
 
 .outside{
@@ -16,4 +17,12 @@ body{
 .panel > .panel_dra {
     background-image: none;
     background-color: white;
+}
+
+.titles{
+    font-size: 17pt;
+}
+
+p{
+    font-size: 15pt;
 }

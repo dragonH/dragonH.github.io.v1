@@ -21,7 +21,7 @@ layout: default
   <div class="panel panel-default">
       <div class="panel-heading  panel_dra">
         <div class="panel-title pull-left">
-          <a class="post-link" href="{{ post.url | relative_url }}"><strong>【{{ post.categories[1] }}】{{ post.title | escape }}</strong></a>
+          <a class="post-link titles" href="{{ post.url | relative_url }}" title="{{post.title}}"><strong>【{{ post.categories[1] }}】{{ post.title | escape | strip_html | truncatewords:6 }}</strong></a>
         </div>
         <div class="panel-title pull-right">
            <span class="post-meta">{{ post.date | date: date_format }}</span> 
