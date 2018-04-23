@@ -29,15 +29,15 @@ tags:
 
     categories: //自訂的文章category,可複數
 
-     \- 'Web'
+     - 'Web'
 
-     \- 'Jekyll'
+     - 'Jekyll'
      
     tags: //自訂的文章tag,可複數
 
-     \- 'Jekyll'
+     - 'Jekyll'
 
-     \- 'note'
+     - 'note'
     
     ---
 
