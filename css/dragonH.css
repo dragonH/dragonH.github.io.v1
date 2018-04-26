@@ -7,7 +7,7 @@
     background-color: #ffffff
 }
 
-body,p{
+body{
     font-family: 'Roboto', 'Noto Sans TC', sans-serif;
 }
 
@@ -23,6 +23,6 @@ body,p{
     font-size: 17pt;
 }
 
-p{
+.post-content,.panel-body{
     font-size: 15pt;
 }

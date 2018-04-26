@@ -7,7 +7,7 @@ categories:
     - 'Jekyll'
 tags:
     - 'Jekyll'
-    - 'note'
+    - 'Notes'
 ---
 簡單記錄一下jekyll文章的一些編寫規定<!-- more -->
 
