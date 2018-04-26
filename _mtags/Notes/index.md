@@ -1,4 +1,4 @@
 ---
 layout: mytags
-title: Jekyll
+title: Notes
 ---
