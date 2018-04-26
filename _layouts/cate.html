@@ -22,11 +22,7 @@ layout: default
               <div class="clearfix"></div>
             </div>
             <div class="panel-body">
-              {% if post.content contains "<-- more -->" %}
-                {{ post.content | spilt: "<-- more -->" | first }}
-              {% else %}
-                {{ post.content | strip_html | truncatewords:100 }}
-              {% endif %}
+                {{ post.excerpt }}
               <div class="read-more">
                   <br><a class="btn btn-default" href="{{ BASE_PATH }}{{ post.url }}">READ MORE</a>
               </div><br>  
