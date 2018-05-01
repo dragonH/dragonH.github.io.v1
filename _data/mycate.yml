@@ -29,4 +29,8 @@ cate:
     subcate:
       - title: News
         url: /mcategories/News/News
+  - title: Server
+    subcate:
+      - title: Ubuntu
+        url: /mcategories/Server/Ubuntu
       
